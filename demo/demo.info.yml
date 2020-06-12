@@ -1,0 +1,18 @@
+name: Demo
+type: theme
+description: 'Theme Demo formation Capge'
+base theme: false # possible héritage de theme
+core: 8.x
+
+# Libraries
+libraries:
+  - demo/bootstrap-cdn
+  - demo/global-styling
+
+# Regions
+regions:
+  header: 'Header'
+  content: 'Content'
+  left_sidebar: 'Left Sidebar'
+  right_sidebar: 'Right Sidebar'
+  footer: 'Footer'
