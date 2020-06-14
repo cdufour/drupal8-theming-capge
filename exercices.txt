@@ -1,0 +1,12 @@
+----
+building.exo1
+----
+Modifier le content-type Equipe afin de pouvoir lui associer un logo
+Créer une vue afin de générer une page "equipes-logo" affichant la liste des équipes sous cette forme:
+ Le nom de l'équipe, le nom de son dirigeant, son logo
+Tous les champs seront en ligne
+
+Ajouter un Javascript sur cette page permettant de filtrer la liste par le biais
+d'un champ de saisie libre. Ce filtrage dynamique (pas besoin de bouton submit) se fera en full-text
+sur le nom de l'équipe et se fera côté client uniquement (aucune requête vers le serveur)
+----

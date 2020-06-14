@@ -1,20 +1,22 @@
-<div class="alert page-bg">PAGE.HTML.TWIG</div>
+<div class="alert page-bg">PAGE.HTML.TWIG {{ toto }}</div>
 
-<div class="container">
+<div {{ attributes }}>
+    <div class="container">
 
-    <div class="row">
-        <div class="col-12">
-            {{ page.header }}
+        <div class="row">
+            <div class="col-12">
+                {{ page.header }}
+            </div>
         </div>
+
+        <div class="row">
+            <div class="col-3">
+                {{ page.left_sidebar }}
+            </div>
+            <div class="col-9">
+                {{ page.content }}
+            </div>
+        </div>
+
     </div>
-
-    <div class="row">
-        <div class="col-3">
-            {{ page.left_sidebar }}
-        </div>
-        <div class="col-9">
-            {{ page.content }}
-        </div>
-    </div>
-
-</div>
+<div>

@@ -9,3 +9,22 @@
 .node-bg        { background-color: #D1F2EB }
 .view-bg        { background-color: #D4EFDF }
 .field-bg       { background-color: #F9E79F }
+
+nav#block-demo-main-menu ul li {
+    display: inline-block;
+    padding: 0 6px
+}
+
+nav#block-demo-main-menu ul li a.is-active {
+    font-weight: bold;
+}
+
+img.custom-image {
+    border: 4px orange solid
+}
+
+
+
+
+
+

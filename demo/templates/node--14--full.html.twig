@@ -1,0 +1,26 @@
+<div class="alert node-bg">NODE.HTML.TWIG</div>
+<article {{ attributes }}>
+    <h3>
+        Titre: <a href="{{ url }}">{{ node.label }}</a>
+    </h3>
+    <p>Ecrit par {{ author_name }}</p>
+    <div id="demo-content">
+        {{ content }}
+    </div>
+</article>
+
+<button id="demo-btn">Test</button>
+
+<script>
+    (function() {
+        
+        var dc = document.getElementById('demo-content');
+        var db = document.getElementById('demo-btn');
+
+        db.addEventListener('click', function() {
+            dc.innerHTML = "<h1>You've been replaced</h1>";
+        })
+
+    })()
+
+</script>

@@ -1,0 +1,25 @@
+<?php
+
+function demo_preprocess_page(&$variables) {
+    $variables['toto'] = 'Ottimo lavoro';
+}
+
+function demo_preprocess_node(&$variables) {
+    $node_type = $variables['node']->getType();
+    if ($node_type == 'article') {
+        $variables['attributes']['class'] = ['node-article'];
+    }
+
+    $variables['author_name'] = $variables['node']->getOwner()->getDisplayName();
+    //$variables['author_picture'] = user_view($variables['node']->getOwner(), 'picture');
+    
+    $nid = $variables['node']->id();
+    if ($nid == 14) {
+        $node = \Drupal::entityTypeManager()->getStorage('node')->load($nid);
+        //var_dump($node->getTitle());
+    }
+}
+
+function demo_preprocess_image(&$variables) {
+    $variables['attributes']['class'] = ['custom-image', 'perso'];
+}
