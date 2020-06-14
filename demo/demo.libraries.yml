@@ -3,6 +3,7 @@ global-styling:
       base:
         css/layout.css: {}
 
+# chargement de bootstrap depuis un cdn
 bootstrap-cdn:
   remote: getbootstrap.com
   version: 4.5
